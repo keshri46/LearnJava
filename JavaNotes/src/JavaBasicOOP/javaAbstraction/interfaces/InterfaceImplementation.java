@@ -2,8 +2,7 @@ package JavaBasicOOP.javaAbstraction.interfaces;
 
 class Functional implements FunctionalInterface {
 
-    public void findArea() {
-        double r = getRadius();
+    public void findCircleArea(int r) {
         System.out.println("Area = " + (int) (pi * r * r));
     }
 
@@ -46,7 +45,7 @@ public class InterfaceImplementation {
         n.findFinalVelocity();
 
         FunctionalInterface f = new Functional();
-        f.findArea();
+        f.findCircleArea(f.getRadius());
 
         Marker m = new Marker();
         if (m instanceof MarkerInterface) {

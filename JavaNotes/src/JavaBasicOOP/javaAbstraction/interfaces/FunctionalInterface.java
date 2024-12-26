@@ -6,7 +6,40 @@ public interface FunctionalInterface {
 
     double pi = 3.14;
 
-    void findArea();
+    void findCircleArea(int r);
+
+    default int getRadius() {
+        Random random = new Random();
+        return random.nextInt(10);
+    }
+
+}
+
+interface FunctionalInterface2 {
+
+    void findArea(int r);
+
+    default int getRadius() {
+        Random random = new Random();
+        return random.nextInt(10);
+    }
+
+}
+
+interface FunctionalInterface3 {
+
+    void findArea(int r);
+
+    default int getRadius() {
+        Random random = new Random();
+        return random.nextInt(10);
+    }
+
+}
+
+interface FunctionalInterface4 {
+
+    void findArea(int r);
 
     default int getRadius() {
         Random random = new Random();
