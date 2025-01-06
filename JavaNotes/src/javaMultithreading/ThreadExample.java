@@ -45,7 +45,7 @@ public class ThreadExample {
                 Counter.increment();
             System.out.println(Thread.currentThread());
         });
-
+ 
         a.start();
         b.start();
         a.join();
